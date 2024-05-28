@@ -25,3 +25,15 @@ console.log(ferrari.getVelocidadeAtual())
 
 console.log(typeof Carro)
 console.log(typeof ferrari)
+
+
+function Pessoa(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+    this.falar = function () {
+        console.log(`Meu nome é ${nome} e tenho ${idade} ano(s)`);
+    }
+}
+
+const pessoa1 = new Pessoa('João', 24);
+pessoa1.falar();
