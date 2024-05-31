@@ -46,5 +46,4 @@ console.log(`Nome do proprietário: ${carro.proprientario.nome}`)
 console.log(`Idade do proprietário: ${carro.proprientario.idade} ano(s)`)
 console.log(`Preço do carro: ${formatarReais(carro.preco)}`)
 console.log(`Valor do seguro para o proprietário original: ${formatarReais(carro.calcularValorSeguro())}`)
-
 console.log(carro)
