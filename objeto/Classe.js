@@ -55,3 +55,19 @@ class Filho extends Pai {
 
 const filho = new Filho
 console.log(filho)
+
+
+class Pessoa {
+    constructor(nome, idade, cidade) {
+        this.nome = nome
+        this.idade = idade
+        this.cidade = cidade
+    }
+
+    falar() {
+        return `Olá, meu nome é ${this.nome}, Tenho ${this.idade} ano(s) de idade e moro em ${this.cidade}`
+    }
+}
+
+const usuario = new Pessoa('Vittorio Augusto', 23, 'João Pessoa')
+console.log(usuario.falar())
