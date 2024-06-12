@@ -17,3 +17,20 @@ const resultado = alunos.map(function (a) {
 })
 
 console.log(resultado)
+
+
+// Desafio 1: Todos os alunos são bolsistas
+const todosBolsistas = function (resultado, bolsista) {
+    return resultado && bolsista
+}
+console.log(alunos.map(function (a) {
+    return a.bolsista
+}).reduce(todosBolsistas))
+
+// Desafio 2: Algum aluno é bolsista?
+const algumBolsista = function (resultado, bolsista) {
+    return resultado || bolsista
+}
+console.log(alunos.map(function (a) {
+    return a.bolsista
+}).reduce(algumBolsista))
